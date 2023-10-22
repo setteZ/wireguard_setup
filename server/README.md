@@ -7,26 +7,26 @@ This part consists of two bash scripts:
 - [qrencode](https://fukuchi.org/works/qrencode/)
 
 ## Wireguard configuration
-Download and run [wireguard_setup.sh](./wireguard_setup.sh) or
+Download and run [wg_setup.sh](./wg_setup.sh) or
 ```bash
-curl -s https://raw.githubusercontent.com/setteZ/wireguard_setup/master/server/wireguard_setup.sh | sudo bash
+curl -s https://raw.githubusercontent.com/setteZ/wg_setup/master/server/wg_setup.sh | sudo bash
 ```
 ## Create new peer
-Download [wireguard_new_peer.sh](./wireguard_new_peer.sh) with
+Download [wg_new_peer.sh](./wg_new_peer.sh) with
 ```bash
-curl -s https://raw.githubusercontent.com/setteZ/wireguard_setup/master/server/wireguard_new_peer.sh > wireguard_new_peer.sh
+curl -s https://raw.githubusercontent.com/setteZ/wg_setup/master/server/wg_new_peer.sh > wg_new_peer.sh
 ```
 or
 ```bash
-wget https://raw.githubusercontent.com/setteZ/wireguard_setup/master/server/wireguard_new_peer.sh
+wget https://raw.githubusercontent.com/setteZ/wg_setup/master/server/wg_new_peer.sh
 ```
 make it executable
 ```bash
-chmod u+x wireguard_new_peer.sh
+chmod u+x wg_new_peer.sh
 ```
 and launch it
 ```bash
-./wireguard_new_peer.sh peer_name peer_ip
+./wg_new_peer.sh peer_name peer_ip
 ```
 
 You will have a _peer_name_ folder with the brand new `peer_name.conf` file 
