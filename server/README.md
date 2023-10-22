@@ -1,7 +1,7 @@
 # Server setup
 This part consists of two bash scripts:
 1. setup the wireguard configuration
-2. create a new config file for a new peer
+2. create a config file for a new peer
 
 ## Dependencies
 - [qrencode](https://fukuchi.org/works/qrencode/)
